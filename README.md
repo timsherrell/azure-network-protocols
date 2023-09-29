@@ -31,7 +31,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/310a29a6-6474-40ec-8dd1-a3ae98281d25" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I pinged my Ubuntu machine and observed the ICMP traffic with Wireshark. 
+I pinged my Ubuntu machine and observed the ICMP requests and replies with Wireshark. 
 </p>
 <br />
 
