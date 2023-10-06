@@ -22,7 +22,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Captured packets for a variety of network traffic with Wireshark
 - Allowed inbound ICMP
-- Remoted to Ubuntu with SSH and navigated terminal
+- Remoted to Ubuntu with SSH and navigated terminal capturing SSH traffic in Wireshark
 - Observed DNS packets with nslookup
 
 <h2>Actions and Observations</h2>
