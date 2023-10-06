@@ -10,7 +10,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Various Command-Line Tools
-- Various Network Protocols (RDP, ICMP, SSH)
+- Various Network Protocols (RDP, ICMP, SSH, DNS)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -34,7 +34,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/c160418a-93d8-4623-8a11-52ef81b47b65" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I created an inbound rule in Azure to deny all ICMP traffic and edited the rule to allow ICMP traffic. I used Windows Remote Desktop to interact with my Windows VW and from there I pinged my Ubuntu VM with "-t" so it would continually send packets. I used Wireshark to capture the ICMP requests and observed the replies from my Ubuntu VM as the rule change took effect.   
+Created an inbound rule in Azure to deny all ICMP traffic and edited the rule to allow ICMP traffic. I used Windows Remote Desktop to interact with my Windows VW and from there I pinged my Ubuntu VM with "-t" so it would continually send packets. I used Wireshark to capture the ICMP requests and observed the replies from my Ubuntu VM as the rule change took effect.   
 </p>
 <br />
 
@@ -46,6 +46,13 @@ I created an inbound rule in Azure to deny all ICMP traffic and edited the rule 
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/d9180919-39e8-48a1-abc1-45f22d1679ec"/>
 </p>
 <p>
-I used SSH protocol to connect to my Ubunutu VM and used Wireshark to anaylze the packets.
+Used SSH protocol to connect to my Ubunutu VM and used Wireshark to anaylze the packets.
 </p>
 <br />
+
+<p>
+  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/4eabaa91-96be-44d8-a38d-042888ebea38"/>
+</p>
+<p>
+  Ran nsloopkup and caputured DNS packets in Wireshark. 
+</p>
