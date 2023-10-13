@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
 </p>
 
-<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
+<h1>(In progress)Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
 In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. This tutorial assumes you have already created your virtual machines in Azure. <br />
 
 <h2>Environments and Technologies Used</h2>
@@ -30,9 +30,17 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
   We can go to portal.azure.com and find our Windows 10 VM (virtual machine). If it isn't on the first page we can use the search bar to look for either virtual machines for our Windows VM or resource groups for the resource group we created for our virtual machines. 
 </p>
-  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/f0304c56-1d72-4d18-8a08-3c1fbcac8962" />
 <p>
-  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/d0e6632c-0341-4061-992f-a757cfb5042a" />
+  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/f0304c56-1d72-4d18-8a08-3c1fbcac8962" />
+</p>
+<p>
+  We will click on the resource group we created to store our VMs. 
+</p>
+<p>
+  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/469e2150-626c-43c3-9ab0-39496e642841" />
+</p>
+<p>
+  <img src="" />
 </p>
 <p>
   We copy the public IP address of our Windows 10 machine and paste it into Windows Remote Desktop Connection. 
@@ -58,12 +66,29 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/abc256c6-e7ab-492a-a01d-9ee8a091518f" />
 </p>
-
+<br />
 
 <p>
-  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/f2be1ab6-1a60-449a-a701-f39db4a60f70" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  While the OS loads we can take a look at the firewall in Azure and set a rule to help us understand the flow of network traffic. We will capture and observe the traffic with Wireshark a little down the road. For now let's go back to our resource group on Azure.    
 </p>
-<br />
+<p>
+  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/0f5fa600-6977-480a-8ae0-e9feac6b3509" />
+</p>
+<p>
+  We want to find our Windows VM network security group (WindowsVM-nsg). 
+</p>
+<p>
+  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/21409353-eeff-4c60-af89-f3dbcaa50ba4" />
+</p>
+<p>
+  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/93c163d2-963a-474f-835a-252ad52b2109" />
+</p>
+<p>
+  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/ea9db12b-f971-47eb-818d-7c7d79aefaeb" />
+</p>
+<p>
+  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/926f2673-8925-4d62-a568-6482bd35eee6" />
+</p>
 <p>
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/c160418a-93d8-4623-8a11-52ef81b47b65" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
