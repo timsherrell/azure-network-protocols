@@ -7,8 +7,6 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Environments and Technologies Used</h2>
 
-We copy the public IP address of our Windows 10 machine and paste it into Windows Remote Desktop Connection. 
-
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Various Command-Line Tools
@@ -30,6 +28,16 @@ We copy the public IP address of our Windows 10 machine and paste it into Window
 <h2>Actions and Observations</h2>
 
 <p>
+  We can go to portal.azure.com and find our Windows 10 VM (virtual machine). If it isn't on the first page we can use the search bar to look for either virtual machines for our Windows VM or resource groups for the resource group we created for our virtual machines. 
+</p>
+  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/f0304c56-1d72-4d18-8a08-3c1fbcac8962" />
+<p>
+  <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/d0e6632c-0341-4061-992f-a757cfb5042a" />
+</p>
+<p>
+  We copy the public IP address of our Windows 10 machine and paste it into Windows Remote Desktop Connection. 
+</p>
+<p>
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/913588f4-4426-40f8-8a4e-e1e0682e52ff" />
 </p>
 <p>
@@ -39,7 +47,7 @@ We copy the public IP address of our Windows 10 machine and paste it into Window
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/91464230-49c0-4d4f-af67-1e22d0803dca" />
 </p>
 <p>
-  Click more choices to sign in with the credentials you created in Azure when you created your Windows 10 virtual machine.
+  Click more choices to sign in with the credentials we created in Azure when you created our Windows 10 virtual machine.
 </p>
 <p>
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/57c535cd-7487-4a50-a94d-c3b389569b95" />
