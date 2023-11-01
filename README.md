@@ -81,14 +81,19 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/21409353-eeff-4c60-af89-f3dbcaa50ba4" />
 </p>
 <p>
+  We can find Inbound Security Rules in the side panel. This will allow us to create an inbound rule for a specific port. We click on Inbound security rules and click "Add New."
+</p>
+<p>
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/93c163d2-963a-474f-835a-252ad52b2109" />
 </p>
 <p>
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/ea9db12b-f971-47eb-818d-7c7d79aefaeb" />
 </p>
+Select ICMP. There is no need to specify a port here. In the name field, we type something that describes our purpose in creating the rule. We will deny ICMP to view how the ping command behaves when ICMP is denied and then allow ICMP traffic to see the difference.  
 <p>
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/926f2673-8925-4d62-a568-6482bd35eee6" />
 </p>
+Bring up Wireshark and filter for ICMP. 
 <p>
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/c160418a-93d8-4623-8a11-52ef81b47b65" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
