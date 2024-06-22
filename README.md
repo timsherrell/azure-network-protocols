@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
 </p>
 
-<h1>(In progress)Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
+<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
 In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. This tutorial assumes you have already created your virtual machines in Azure. <br />
 
 <h2>Environments and Technologies Used</h2>
@@ -38,9 +38,6 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <p>
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/469e2150-626c-43c3-9ab0-39496e642841" />
-</p>
-<p>
-  <img src="" />
 </p>
 <p>
   We copy the public IP address of our Windows 10 machine and paste it into Windows Remote Desktop Connection. 
@@ -98,7 +95,7 @@ Bring up Wireshark and filter for ICMP.
   <img src="https://github.com/timsherrell/azure-network-protocols/assets/144177449/c160418a-93d8-4623-8a11-52ef81b47b65" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Created an inbound rule in Azure to deny all ICMP traffic and edited the rule to allow ICMP traffic. I used Windows Remote Desktop to interact with my Windows VW and from there I pinged my Ubuntu VM with "-t" so it would continually send packets. I used Wireshark to capture the ICMP requests and observed the replies from my Ubuntu VM as the rule change took effect.   
+Created an inbound rule in Azure to deny all ICMP traffic and edited the rule to allow ICMP traffic. We used Windows Remote Desktop to interact with my Windows VW and from there we pinged my Ubuntu VM with "-t" so it would continually send packets. We used Wireshark to capture the ICMP requests and observed the replies from my Ubuntu VM as the rule change took effect.   
 </p>
 <br />
 
